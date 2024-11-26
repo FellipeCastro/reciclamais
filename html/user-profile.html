@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/default.css">
+    <link rel="stylesheet" href="../styles/user-profile.css">
+
+    <script src="../scripts/userProfile.js" defer></script>
+
+     <!--FONT AWESOME-->
+     <script src="https://kit.fontawesome.com/108acab114.js" crossorigin="anonymous" defer></script>
+
+    <title>Perfil</title>
+</head>
+<body>
+    <a href="../index.html" class="back-btn">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+    <main>
+      <div class="user-infos">
+
+        <div class="identification-user">
+            <div class="photo-user">
+                <p>ML</p>
+            </div>
+            <div class="name_xp-user">
+                <h1>Matheus Bezerra Lima</h1>
+                <div class="xp-infos">
+                    <span>XP 3656 / 4000</span>
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="title-user">
+            <h2>Iniciante Sustentável</h2>
+        </div>
+      </div>
+
+      <div class="content-profile-body">
+        <div class="box-slick-slider">
+            <div class="slick-slider">
+                <button type="button" onclick="changeStatusButton(this)" class="enable"><h5>Plástico</h5><span>1</span></button>
+                <button type="button" onclick="changeStatusButton(this)"><h5>Metais</h5><span>0</span></button>
+                <button type="button" onclick="changeStatusButton(this)"><h5>Papelão</h5><span>0</span></button>
+                <button type="button" onclick="changeStatusButton(this)"><h5>Papéis</h5><span>0</span></button>
+                <button type="button" onclick="changeStatusButton(this)"><h5>Vidro</h5><span>0</span></button>
+                <button type="button" onclick="changeStatusButton(this)"><h5>Eletrônicos</h5><span>0</span></button>
+                <button type="button" onclick="changeStatusButton(this)"><h5>Pilha/Bateria</h5><span>0</span></button>
+                <button type="button" onclick="changeStatusButton(this)"><h5>Têxteis</h5><span>0</span></button>
+                <button type="button" onclick="changeStatusButton(this)"><h5>Óleo Usado</h5><span>0</span></button>
+                <button type="button" onclick="changeStatusButton(this)"><h5>Madeira</h5><span>0</span></button>
+            </div>
+
+            <button type="button" class="controlerSlider next" onclick="moveSlider(this)">
+                <i class="fa-solid fa-angle-right" style="color: #ffffff;"></i>
+            </button>
+
+            <button type="button" class="controlerSlider back" onclick="moveSlider(this)">
+                <i class="fa-solid fa-angle-left" style="color: #ffffff;"></i>
+            </button>
+        </div>
+
+        <div class="box-message-empty">
+            
+                <h6>Você ainda não doou nenhum item dessa categoria. Comece agora mesmo!</h6>
+
+                <a href="../index.html#doar-residuos">Quero fazer uma doação</a>
+
+        </div>
+      </div>
+    </main>
+</body>
+</html>
+

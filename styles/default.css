@@ -1,0 +1,122 @@
+:root {
+    --large-size: 15px;
+    --medium-size: 12px;
+    --small-size: 10px;
+}
+
+*, HTML, Body{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    line-height: 1.5;
+    font-family: Arial;
+    scroll-behavior: smooth;
+    font-size: var(--large-size);
+}
+
+header a{
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 1em;
+    color: #187b1b;
+    transition: 0.5s;
+}
+
+header a:hover {
+    color: #187b1b99;
+    transform: translateY(-4px);
+
+}
+header a:active {
+    transform: translateY(4px);
+
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+header{
+    width: 100%;
+    background-color: white;
+    padding: 2px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.3em;
+    color: #187b1b;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 9;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-logo{
+    height: 100%;
+}
+
+.box-logo > img{
+    width: 70px;
+}
+
+.box-logo:hover {
+    transform: translateY(0px);
+}
+
+.menu{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.user-icon{
+    font-size: 2em;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.menu-icon {
+    cursor: pointer;
+    display: none;
+    font-size: 1.6em;
+}
+
+@media (max-width: 1024px) {
+    * {
+        font-size: var(--medium-size);
+    }
+}
+
+@media (max-width: 905px) {
+    header {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        display: none;
+        margin-left: -40px;
+    }
+
+    .user-icon {
+        margin-left: 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    * {
+        font-size: var(--small-size);
+    }
+}

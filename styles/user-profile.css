@@ -1,0 +1,213 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    
+}
+.back-btn {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    padding: 1em;
+    color: #187b1b;
+}
+.back-btn i {
+    font-size: 2em;
+}
+main{
+    width: 100%;
+    margin-top: 74px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    gap: 1rem;
+}
+main > div {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 920px;
+    padding: 1rem;
+    background-color: #56695eb7;
+    box-shadow: 0px 0px 22px 2px rgba(0, 0, 0, 0.24);
+}
+.user-infos{
+    display: flex;
+    justify-content: space-around;
+
+    & .identification-user{
+        display: flex;
+        width: fit-content;
+        flex-direction: row;
+        gap: 1rem;
+    
+        & .photo-user{
+            width: 80px;
+            height: 80px;
+            background-color: rgb(123, 124, 123);
+            border-radius: 50%;
+            border: 2px solid #187b1bd7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        & .name_xp-user{
+            display: flex;
+            flex-direction: column;
+        
+            & .name_xp-user > h1{
+                font-size: 1.5rem;
+            }
+            & .xp-infos > span{
+                font-size: 0.8rem;
+                font-weight: bold;
+            }
+            & .progress-bar{
+                width: 300px;
+                height: 12px;
+                background-color: white;
+                border-radius: 10px;
+            }
+        }
+
+    }
+}
+
+.title-user{
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #7D7E80, #A9A9A9);
+}
+
+.content-profile-body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+
+.box-slick-slider{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.controlerSlider{
+    position: absolute;
+    top: 1rem;
+    border-radius: 50%;
+    height: fit-content;
+    padding: 2px 6px ;
+    background-color: #353535e0;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+
+    & i{
+        /* font-size: 0.9rem; */
+        line-height: 0;
+        color: #ffffff;
+    }
+}
+
+.next{
+    right: -0.6rem;
+}
+
+.back{
+    left: -0.6rem;
+    display: none;
+}
+
+.slick-slider{
+    width: 100%;
+    max-width: 850px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+    gap: 0.9rem;
+
+    & button{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        width: calc( 100%  / 5);
+        min-width: 158px;
+        max-width: 158px;
+        height: fit-content;
+        font-size: 1.3rem;
+        white-space: nowrap;
+        padding: 15px 25px;
+        color: #fff;
+        background-color: rgb(167, 169, 166);
+        border-radius: 5px;
+        border: none;
+        transition: 0.5s;
+    }
+    & button:hover{
+        background-color: #187b1bd7;
+        color: #fbf9f9;
+        cursor: pointer;
+    }
+    & button > span{
+        padding: 0.2rem 0.5rem;
+        border-radius: 50%;
+        font-size: 0.6rem;
+        background-color: #353535;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .enable{
+        background-color: #187b1bd7;
+        color: #fbf9f9;
+    }
+}
+
+.box-message-empty{
+    margin-top: 2rem;
+    align-self: center;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    & h6{
+        font-size: 1rem;
+        color: #ffffffe1;
+    }
+    & a{
+        padding:10px 15px;
+        background-color: #187b1b;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        transition: 0.2s;
+    }
+    & a:hover{
+        background-color: #187b1b99;
+    }
+}
+  
